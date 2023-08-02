@@ -35,7 +35,7 @@ if selectSpecies:
     fig= plt.figure(figsize=(7,5))
     for aSpecies in selectSpecies:
         df=dfIris[dfIris.species==aSpecies]
-    plt.scatter(df[selectX],df[selectY],color=colors[aSpecies],alpha=selectAlpha, label=aSpecies)
+        plt.scatter(df[selectX],df[selectY],color=colors[aSpecies],alpha=selectAlpha, label=aSpecies)
     plt.legend(loc="lower right")
     plt.xlabel(selectX)
     plt.ylabel(selectY)
